@@ -37,6 +37,7 @@ public class Testing1090Application {
         System.out.println("**********************************");
         bookMap.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.comparing(Booke::getDept).reversed())).forEach(System.out::println);
         System.out.println("**********************************");
+        bookMap.forEach(System.out::println);
     }
 
 }
